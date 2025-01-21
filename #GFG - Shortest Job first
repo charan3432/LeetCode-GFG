@@ -1,6 +1,6 @@
 
 
-//User function Template for Java - Time Complexity - O(N) Space Complexity - O(N)
+//User function Template for Java - Time Complexity - O(N)+O(NlogN) Space Complexity - O(N)
 
 class Solution {
     static int solve(int bt[] ) {
@@ -22,7 +22,7 @@ class Solution {
   }
 }
 
-//User function Template for Java Time Complexity - O(N) Space Complexity - O(1)
+//User function Template for Java Time Complexity - O(N)+O(NlogN) Space Complexity - O(1)
 
 class Solution {
     static int solve(int bt[] ) {
