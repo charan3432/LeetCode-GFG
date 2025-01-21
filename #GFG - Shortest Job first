@@ -1,0 +1,42 @@
+
+
+//User function Template for Java - Time Complexity - O(N) Space Complexity - O(N)
+
+class Solution {
+    static int solve(int bt[] ) {
+    // code here
+    Arrays.sort(bt);
+    int n=bt.length;
+    ArrayList<Integer> arr = new ArrayList<>();
+    
+    int wt = 0;
+    for(int i=1;i<n;i++) {
+        wt = wt + bt[i-1];
+        arr.add(wt);
+    }
+    int res = 0;
+    for(int i:arr) {
+        res = res + i;
+    }
+    return res/n;
+  }
+}
+
+//User function Template for Java Time Complexity - O(N) Space Complexity - O(1)
+
+class Solution {
+    static int solve(int bt[] ) {
+    // code here
+    Arrays.sort(bt);
+    int n=bt.length;
+    int res = 0;
+    
+    int wt = 0;
+    for(int i=1;i<n;i++) {
+        wt = wt + bt[i-1];
+        res = res + wt;
+    }
+    return res/n;
+  }
+}
+     
